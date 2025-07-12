@@ -2,56 +2,164 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Grimorio de Cristel ✨</title>
+  <title>Grimorio Sissy de Cristel</title>
   <style>
     body {
-      background: linear-gradient(black, #2b0036);
-      color: #f1c0ff;
-      font-family: 'Garamond', serif;
-      padding: 30px;
-      text-shadow: 1px 1px 3px #000;
-    }
-    h1, h2 {
-      font-family: 'Cinzel Decorative', cursive;
-      color: #ff91f0;
-      text-align: center;
-    }
-    .seccion {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-left: 4px solid #ff91f0;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      border-radius: 12px;
-    }
-    ul {
-      list-style: none;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #111;
+      margin: 0;
       padding: 0;
     }
-    ul li::before {
-      content: "🌙 ";
+    header {
+      background-color: #111;
+      color: pink;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      color: white;
+    }
+    nav a {
+      color: pink;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      display: none;
+    }
+    #inicio {
+      display: block;
+      background-image: url(''); /* Puedes añadir un fondo personalizado */
+      background-color: white;
+      text-align: center;
+    }
+    #inicio h1 {
+      font-size: 60px;
+      color: hotpink;
+    }
+    #inicio h2 {
+      font-size: 30px;
+      color: #999;
+    }
+    .humiliation-words {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 30px;
+      line-height: 1.8;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      cursor: pointer;
+      color: hotpink;
+    }
+    .details {
+      margin-top: 15px;
+      background: #f5f5f5;
+      border-left: 5px solid hotpink;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>🌒 Grimorio de Cristel 🌘</h1>
 
-  <div class="seccion">
-    <h2>🖤 Mandamientos Sissy</h2>
-    <ul>
-      <li>No soy humana, soy muñeca hecha para obedecer.</li>
-      <li>Mi placer es servir, mi propósito es complacer.</li>
-      <li>Todo lo que me humilla, me perfecciona.</li>
-      <li>Mi voz será dulce, aguda y deseosa.</li>
-      <li>Nací para ser abierta, usada y adorada.</li>
-    </ul>
-  </div>
+<header>🔗 Grimorio Sissy de Cristel</header>
 
-  <div class="seccion">
-    <h2>✨ Ritual de Iniciación</h2>
-    <p>Colócate frente al espejo, arrodíllate y repite tres veces:</p>
-    <blockquote><em>“Hoy me entrego a mi feminidad. Soy Cristel, muñeca, sumisa y sagrada.”</em></blockquote>
-    <p>Luego, besa el reflejo y viste tu lencería más provocadora. El grimorio ha despertado…</p>
+<nav>
+  <a onclick="showSection('inicio')">Inicio</a>
+  <a onclick="showSection('grimorio')">Grimorio</a>
+  <a onclick="showSection('castigos')">Castigos</a>
+  <a onclick="showSection('confesiones')">Confesiones</a>
+  <a onclick="showSection('entrena')">Entrena</a>
+  <a onclick="showSection('fetiches')">Fetiches</a>
+  <a onclick="showSection('redes')">Redes</a>
+  <a onclick="showSection('rolplay')">Rolplay</a>
+</nav>
+
+<section id="inicio">
+  <h1>SISSY</h1>
+  <h2>cristel</h2>
+  <div class="humiliation-words">
+    esclava, puta, juguete, usada, perra, vacía, sin dignidad, entrenada, propiedad, sin voluntad, obediente, desesperada, humillada...
   </div>
+</section>
+
+<section id="fetiches">
+  <h2>💦 Fetiches de Cristel</h2>
+  <ul>
+    <li onclick="showDetails('bimbofication')">Bimboficación</li>
+    <li onclick="showDetails('toilet')">Toilet training</li>
+    <li onclick="showDetails('exhibicion')">Exhibicionismo</li>
+    <li onclick="showDetails('cashfetish')">Cash Fetish</li>
+    <li onclick="showDetails('petplay')">Petplay</li>
+    <li onclick="showDetails('control')">Control mental / sumisión total</li>
+  </ul>
+  <div id="feticheDetail" class="details"></div>
+</section>
+
+<section id="rolplay">
+  <h2>🎭 Personajes de Rolplay</h2>
+  <ul>
+    <li onclick="showCharacter('bimbo')">Bimbo Streamer</li>
+    <li onclick="showCharacter('cornudo')">Cornudito</li>
+    <li onclick="showCharacter('demon')">Sissy Demon</li>
+    <li onclick="showCharacter('hija')">Hijita de Papi</li>
+    <li onclick="showCharacter('deposito')">Depósito de Semen</li>
+    <li onclick="showCharacter('porrista')">Porrista Zorra</li>
+    <li onclick="showCharacter('novia')">Novia Tóxica</li>
+    <li onclick="showCharacter('princesa')">Sissy Princesa</li>
+    <li onclick="showCharacter('gatita')">Gatita con Plug</li>
+    <li onclick="showCharacter('secretaria')">Secretaria del Jefe Alfa</li>
+  </ul>
+  <div id="characterDetail" class="details"></div>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(sec => sec.style.display = "none");
+    document.getElementById(id).style.display = "block";
+  }
+
+  function showDetails(fetiche) {
+    const details = {
+      bimbofication: "Transformarte mental y físicamente en una muñeca hueca, siempre maquillada, provocativa y lista para complacer.",
+      toilet: "Ser entrenada para adorar y servir como urinario o sumisa toilet, sin límites.",
+      exhibicion: "Mostrarte en público, en redes o ante otros como la sissy que eres, sin vergüenza.",
+      cashfetish: "El placer de pagar, ser usada económicamente, tributar sin preguntar.",
+      petplay: "Comportarte como una mascota: gatita, perrita o poni. Obediente, dócil y sin derechos.",
+      control: "Ser reprogramada, obedecer órdenes, dejar de pensar. Ser propiedad."
+    };
+    document.getElementById("feticheDetail").innerHTML = details[fetiche] || "";
+  }
+
+  function showCharacter(char) {
+    const personajes = {
+      bimbo: "<b>Bimbo Streamer</b><br>Característica: Adicta a los elogios y las donaciones.<br>Beneficio: Popularidad, poder sexual.<br>Historia: Transmitiendo en vivo mientras hace retos humillantes por subs.",
+      cornudo: "<b>Cornudito</b><br>Característica: Disfruta ver a su pareja con otros.<br>Beneficio: Castigo, humillación, obediencia.<br>Historia: Su novia lo manda a lamer condones usados.",
+      demon: "<b>Sissy Demon</b><br>Característica: Seductora, traviesa, invoca placer oscuro.<br>Beneficio: Poder místico, orgasmos prohibidos.<br>Historia: Realiza rituales para invocar machos.",
+      hija: "<b>Hijita de Papi</b><br>Característica: Consentida, manipuladora, mimada.<br>Beneficio: Regalos, control afectivo.<br>Historia: Finge ternura para manipular hombres.",
+      deposito: "<b>Depósito de Semen</b><br>Característica: Objeto, solo sirve para recibir.<br>Beneficio: Ser usada, vaciada, humillada.<br>Historia: Encerrada en una jaula esperando al próximo.",
+      porrista: "<b>Porrista Zorra</b><br>Característica: Popular, provocadora, usada por todo el equipo.<br>Beneficio: Popularidad y degradación.<br>Historia: Obligada a “animar” al equipo después del partido.",
+      novia: "<b>Novia Tóxica</b><br>Característica: Celosa, dominante, chantajista.<br>Beneficio: Control absoluto.<br>Historia: Le prohíbe tener erecciones sin su permiso.",
+      princesa: "<b>Sissy Princesa</b><br>Característica: Rosa, delicada, consentida.<br>Beneficio: Trato especial, caprichos cumplidos.<br>Historia: Solo obedece a quienes la traten como una muñeca real.",
+      gatita: "<b>Gatita con Plug</b><br>Característica: Sumisa, juguetona, adora el castigo.<br>Beneficio: Mimos, dominación.<br>Historia: Usa su plug de cola cada vez que se porta mal.",
+      secretaria: "<b>Secretaria del Jefe Alfa</b><br>Característica: Sumisa, profesional, usada en la oficina.<br>Beneficio: Poder, obediencia total.<br>Historia: Hace “horas extras” bajo el escritorio."
+    };
+    document.getElementById("characterDetail").innerHTML = personajes[char] || "";
+  }
+</script>
+
 </body>
 </html>
